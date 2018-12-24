@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<input type="button" value="切换" onClick="showHideo()" class="touch_sr_only"/>
+
+<div id="div1"></div>
+
+<script>
+function showHideo()
+
+{
+
+    var eDiv=document.getElementById('div1');
+    debugger;
+    console.log(eDiv)
+    console.log(eDiv.style.cssText)
+
+    if(eDiv.style.cssText=='top:100px;background:#f60')
+    {
+        eDiv.style.cssText='top:0px;background:#f90';
+    }
+    else
+    {
+        eDiv.style.cssText='top:100px;background:#f60';
+    }
+}
+
+</script>
+<style>
+#div1 { position:relative;  width:100px; height:100px; background:#CCC; top:0;}
+</style>
+</body>
+</html>
